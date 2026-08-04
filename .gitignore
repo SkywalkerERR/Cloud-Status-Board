@@ -1,0 +1,60 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Docker
+*.log
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ansible
+*.retry
+ansible/inventory/hosts.ini
+!ansible/inventory/hosts.ini.example
+
+# Secrets / keys
+*.pem
+*.key
+id_rsa*
+service-account*.json
+yc-sa*.json
+secrets/
+.secrets/
+
+# Kubernetes local
+kubeconfig
+*.kubeconfig
+
+# Misc
+tmp/
+.cache/
+dist/
+build/
