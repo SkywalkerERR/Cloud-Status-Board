@@ -49,8 +49,3 @@ devops-pet-project/
 ├── .gitignore
 └── README.md
 ```
-
-
-## Лицензия
-
-Учебный проект. Делай что хочешь.
