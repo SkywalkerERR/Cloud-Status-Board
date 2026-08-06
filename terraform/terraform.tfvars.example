@@ -1,0 +1,6 @@
+yc_sa_key_path     = "C:/secrets/yc-sa-key.json"
+cloud_id           = "b1gxxxxxxxxxxxxxxxxx"
+folder_id          = "b1gxxxxxxxxxxxxxxxxx"
+zone               = "ru-central1-a"
+ssh_public_key_path = "C:/Users/YOU/.ssh/yc_status_board.pub"
+ssh_username       = "ubuntu"
