@@ -49,3 +49,15 @@ devops-pet-project/
 ├── .gitignore
 └── README.md
 ```
+## Demo (end-to-end)
+
+1. Local: `docker compose up --build` → http://localhost/health
+2. Infra: `cd terraform && terraform apply`
+3. Config/deploy VM (Compose era): `ansible-playbook -i inventory/hosts.ini playbooks/site.yml`
+4. K8s: k3s on VM + `kubectl apply -f k8s/` → http://<VM_IP>:30080/health
+5. CI/CD: push to `main` → GHCR image → `kubectl set image ...` / `scripts/deploy.sh`
+
+### Cleanup (не забывай про деньги)
+
+```bash
+cd terraform && terraform destroy
