@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: status-board
-          image: status-board:local
-          imagePullPolicy: IfNotPresent
+          image: ghcr.io/skywalkererr/status-board:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
           env:
