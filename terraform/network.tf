@@ -24,6 +24,13 @@ resource "yandex_vpc_security_group" "main" {
     port           = 80
   }
 
+  ingress {
+    protocol       = "TCP"
+    description    = "Application on 30080"
+    port           = 30080
+    v4_cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     protocol       = "ANY"
     description    = "Allow all egress"
